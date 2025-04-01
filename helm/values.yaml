@@ -5,3 +5,5 @@ service:
   port: 80
 hpa:
   CPU: 70
+tgb:
+  arn: arn:aws:elasticloadbalancing:us-east-1:180294178330:targetgroup/frontend/62e0e3f87d47b714
