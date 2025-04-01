@@ -49,3 +49,19 @@ spec:
     port: {{ .Values.service.port }}        # Service Port , this is for other containers to communicate with nginx container
     targetPort: 80   # Container Port
     protocol: TCP
+---
+#autoscaling
+
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: frontend
+  namespace: expense
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: frontend
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: {{ .Values.hpa.CPU }}
