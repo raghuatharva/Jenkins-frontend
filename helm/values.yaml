@@ -1,0 +1,7 @@
+deployment:
+  imageversion: IMAGE_VERSION
+  iamge: 180294178330.dkr.ecr.us-east-1.amazonaws.com/expense/dev/backend
+service:
+  port: 80
+hpa:
+  CPU: 70
