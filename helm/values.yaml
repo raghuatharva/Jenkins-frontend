@@ -7,4 +7,4 @@ service:
 hpa:
   CPU: 70
 tgb:
-  arn: arn:aws:elasticloadbalancing:us-east-1:180294178330:targetgroup/frontend/5b080eadf68303ad
+  arn: arn:aws:elasticloadbalancing:us-east-1:180294178330:targetgroup/frontend/c55a3d95d168a748
