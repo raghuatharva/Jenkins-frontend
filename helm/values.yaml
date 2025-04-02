@@ -1,6 +1,5 @@
 deployment:
-  # imageversion: IMAGE_VERSION
-  imageversion: 1.1
+  imageversion: IMAGE_VERSION
   image: 180294178330.dkr.ecr.us-east-1.amazonaws.com/expense/dev/frontend
 service:
   port: 80
