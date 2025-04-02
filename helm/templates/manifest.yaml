@@ -48,7 +48,7 @@ metadata:
   name: frontend
   namespace: expense
 spec:
-  type: ClusterIP     # ALB requires ClusterIP for TargetGroupBinding
+  type: LoadBalancer     # ALB requires ClusterIP for TargetGroupBinding
   selector:           # This is the label of the pod to which this service will route the traffic
     app: nginx             
     tier: frontend
