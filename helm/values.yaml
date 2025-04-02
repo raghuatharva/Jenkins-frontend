@@ -1,9 +1,9 @@
 deployment:
   imageversion: IMAGE_VERSION
-  iamge: 180294178330.dkr.ecr.us-east-1.amazonaws.com/expense/dev/backend
+  image: 180294178330.dkr.ecr.us-east-1.amazonaws.com/expense/dev/backend
 service:
   port: 80
 hpa:
   CPU: 70
 tgb:
-  arn: arn:aws:elasticloadbalancing:us-east-1:180294178330:targetgroup/frontend/62e0e3f87d47b714
+  arn: arn:aws:elasticloadbalancing:us-east-1:180294178330:targetgroup/frontend/5b080eadf68303ad
