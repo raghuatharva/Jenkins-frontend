@@ -41,7 +41,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: nginx
+  name: frontend
   namespace: expense
 spec:
   type: NodePort
