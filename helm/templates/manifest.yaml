@@ -44,7 +44,7 @@ metadata:
   name: nginx
   namespace: expense
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:           # This is the label of the pod to which this service will route the traffic
     app: nginx             
     tier: frontend
