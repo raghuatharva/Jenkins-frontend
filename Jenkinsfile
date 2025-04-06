@@ -14,6 +14,7 @@ pipeline {
         project = 'expense'
         environment = 'dev'
         component = 'frontend'
+        APP_VERSION = ''  // this will become global, we can use across pipeline
     }
     stages{
         stage('read the version') {
