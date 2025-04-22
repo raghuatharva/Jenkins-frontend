@@ -21,19 +21,28 @@ pipeline {
             steps {
                 script {
                     sh 'git clone https://github.com/raghuatharva/jenkins-frontend.git'
-                    env.APP_VERSION = sh(script: 'git describe --tags --abbrev=0', returnStdout: true).trim()
-                    echo "The latest version is ${env.APP_VERSION}"
+                    APP_VERSION = sh(script: 'cd jenkins-frontend && git describe --tags --abbrev=0', returnStdout: true).trim()
+                    echo "The latest version is ${APP_VERSION}"
                 }
             }
         }
-
+        // stage('Read the version') {
+        //     steps {
+        //         script{
+        //             def packageJson = readJSON file: 'package.json'
+        //             appVersion = packageJson.version
+        //             echo "App version: ${appVersion}"
+        //         }
+        //     }
+        // }
+        
         stage('building docker image'){
             steps{
                 withAWS(region: 'us-east-1', credentials: 'aws-creds') {
                 sh """
                 aws ecr get-login-password --region ${region} | docker login --username AWS --password-stdin ${account_id}.dkr.ecr.us-east-1.amazonaws.com
-                docker build -t ${account_id}.dkr.ecr.${region}.amazonaws.com/${project}/${environment}/${component}:${env.APP_VERSION} .
-                docker push ${account_id}.dkr.ecr.us-east-1.amazonaws.com/${project}/${environment}/${component}:${env.APP_VERSION}
+                docker build -t ${account_id}.dkr.ecr.${region}.amazonaws.com/${project}/${environment}/${component}:${APP_VERSION} .
+                docker push ${account_id}.dkr.ecr.us-east-1.amazonaws.com/${project}/${environment}/${component}:${APP_VERSION}
                 """
                 }
             }
