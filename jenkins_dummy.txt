@@ -1,1 +1,1 @@
-Commit #3: Configure Jenkinsfile for Node.js CI pipeline
+Commit #4: Add Jenkinsfile stage to build Docker image
