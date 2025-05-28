@@ -1,1 +1,1 @@
-Commit #4: Add Jenkinsfile stage to build Docker image
+Commit #5: Integrate Jenkins with SonarQube for static analysis
