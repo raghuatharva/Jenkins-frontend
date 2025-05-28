@@ -1,1 +1,1 @@
-Commit #13: Add Jenkinsfile stage for running integration tests
+Commit #14: Fix Jenkins pipeline syntax errors
