@@ -1,1 +1,1 @@
-Commit #14: Fix Jenkins pipeline syntax errors
+Commit #15: Add Jenkins pipeline stage for cleanup after build
