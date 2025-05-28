@@ -1,1 +1,1 @@
-Commit #5: Integrate Jenkins with SonarQube for static analysis
+Commit #6: Add Jenkins pipeline stage for running unit tests
