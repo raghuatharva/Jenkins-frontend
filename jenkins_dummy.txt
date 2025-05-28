@@ -1,1 +1,1 @@
-Commit #10: Add Jenkinsfile stage for deployment to staging environment
+Commit #11: Add notifications on Jenkins build success and failure
