@@ -1,1 +1,1 @@
-Commit #8: Configure Jenkins to trigger builds on GitHub push events
+Commit #9: Implement Jenkins pipeline stage to push Docker image to ECR
