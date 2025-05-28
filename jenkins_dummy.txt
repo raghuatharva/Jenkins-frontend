@@ -1,1 +1,1 @@
-Commit #17: Add retry logic for flaky Jenkins pipeline steps
+Commit #18: Update Jenkinsfile to use latest Node.js Docker image
