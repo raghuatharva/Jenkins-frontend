@@ -1,1 +1,1 @@
-Commit #7: Setup Jenkins credentials for AWS ECR access
+Commit #8: Configure Jenkins to trigger builds on GitHub push events
