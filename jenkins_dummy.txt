@@ -1,1 +1,1 @@
-Commit #9: Implement Jenkins pipeline stage to push Docker image to ECR
+Commit #10: Add Jenkinsfile stage for deployment to staging environment
