@@ -1,1 +1,1 @@
-Commit #6: Add Jenkins pipeline stage for running unit tests
+Commit #7: Setup Jenkins credentials for AWS ECR access
