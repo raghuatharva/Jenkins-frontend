@@ -1,1 +1,1 @@
-Commit #12: Implement Jenkinsfile parallel stages for faster builds
+Commit #13: Add Jenkinsfile stage for running integration tests
