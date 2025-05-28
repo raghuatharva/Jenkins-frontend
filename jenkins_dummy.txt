@@ -1,1 +1,1 @@
-Commit #19: Add Jenkins pipeline stage to archive build artifacts
+Commit #20: Add security scan stage with Jenkins and SonarQube
